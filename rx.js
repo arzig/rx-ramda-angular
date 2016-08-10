@@ -47,7 +47,7 @@ const readFile = (p) => Observable.create(observer => {
 });
 
 Observable.from(["package.json", ".gitignore"])
-    .mergeMap(readFile, 1)
+    .mergeMap(readFile)
     .map(R.toUpper)
     .reduce((acc, s) => acc + "***\n" + s)
     .map(s => `+++\n${s}---`)
