@@ -10,7 +10,7 @@ const R = require("ramda");
 const me = {
     name: "Ryan",
     address: {
-        street: ["Awesome St."],
+        street: ["Awesome St.", "Apt. 1623"],
         city: "Plano",
         zip: 75023,
         state: "TX"
@@ -65,16 +65,17 @@ console.log(oldMe);
 console.log(me);
 /*
 Outputs...
+
 { name: 'Ryan',
   address:
-   { street: [ 'Ambivalent Street' ],
+   { street: [ 'Ambivalent Street', 'Apt. 1623' ],
      city: 'Plano',
      zip: 75023,
      state: 'TX' },
   picture: { full: '/path/to/full.png', thumb: '/path/to/thumb.png' } }
 { name: 'Ryan',
   address:
-   { street: [ 'Awesome St.' ],
+   { street: [ 'Awesome St.', 'Apt. 1623' ],
      city: 'Plano',
      zip: 75023,
      state: 'TX' },
